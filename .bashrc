@@ -4,7 +4,7 @@
 ###################################################################
 
 # export PS1="\[\e[33m\]\u\[\e[m\]\[\e[37;40m\]@\[\e[m\]\[\e[36m\]\w\[\e[m\] "
-export PS1="\e[0;91m\d \t \[\033[0;32m\]\u@\h:\e[0;93m\w \e[0;93m$ \e[m" 
+export PS1="\[\033[0;32m\]\u@\h:\e[0;93m\w \e[0;93m$ \e[m" 
 # \e[m
 
 alias piggydev='tmux new-session \; split-window -h \; split-window -v \; resize-pane -x 132 -y 43 \; send-keys "cd ~/367sp17/piggy/" C-m'
@@ -29,12 +29,13 @@ fi
 
 alias ll='ls -alF'
 alias la='ls -A'
-alias ls='ls -ls'
+#alias ls='ls -ls'
 
+alias emacs='emacs -nw'
 alias loadbash='. ~/.bashrc'
 
 alias enterwwucs='ssh -p 922 kvams@linux.cs.wwu.edu'
-alias enterprocavx='ssh -p 922 kvams@procavx.proj.cs.wwu.edu'
+alias enterpcx='ssh -p 922 kvams@procavx.proj.cs.wwu.edu'
 
 # trying to add l='ls -la -Rt' to list sorted by date
 # none of these were working at all tho 8-2-17
