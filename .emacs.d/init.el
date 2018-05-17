@@ -3,10 +3,15 @@
 (require 'package)
 (package-initialize)
 (add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+	     '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/moe-theme")
 (add-to-list 'load-path "~/.emacs.d/themes/moe-theme")
 (add-to-list 'load-path "~/.emacs.d/ng2-mode")
+
+;; https://magit.vc/manual/2.12.0/magit/Getting-Started.html#Getting-Started
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
+(setq magit-view-git-manual-method 'man)
 
 ;; TypeScript via https://github.com/AdamNiederer/ng2-mode
 (require 'ng2-mode)
