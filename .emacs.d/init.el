@@ -7,6 +7,15 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/moe-theme")
 (add-to-list 'load-path "~/.emacs.d/themes/moe-theme")
 (add-to-list 'load-path "~/.emacs.d/ng2-mode")
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa") t)
+
+;; https://orgmode.org/elpa.html
+(unless package-archive-contents ;; refresh packages descriptions
+  (package-refresh-contents))
+(setq package-load-list '(all))
+(unless (package-installed-p 'org)
+  (package-install 'org))
+(package-initialize)
 
 ;; https://magit.vc/manual/2.12.0/magit/Getting-Started.html#Getting-Started
 (global-set-key (kbd "C-x g") 'magit-status)
