@@ -17,6 +17,12 @@
   (package-install 'org))
 (package-initialize)
 
+;; https://github.com/joaotavora/yasnippet
+(add-to-list 'loadpath
+	     "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ;; https://magit.vc/manual/2.12.0/magit/Getting-Started.html#Getting-Started
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
