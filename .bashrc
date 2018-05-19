@@ -32,7 +32,7 @@ alias la='ls -A'
 #alias ls='ls -ls'
 alias emacs='emacs -nw'
 alias loadbash='. ~/.bashrc'
-alias enterwwucs='ssh -p 922 kvams@linux.cs.wwu.edu'
+alias enterwwu='ssh -p 922 kvams@linux.cs.wwu.edu'
 alias enterpcx='ssh -p 922 kvams@procavx.proj.cs.wwu.edu'
 
 # trying to add l='ls -la -Rt' to list sorted by date
