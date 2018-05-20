@@ -2,4 +2,16 @@
 
 ln -sv ~/dotfiles/.bashrc ~
 ln -sv ~/dotfiles/.tmux.conf ~
+
+if [ -d "~/.emacs.d/" ]; then
+    if [ -L "~/.emacs.d" ]; then
+	# symlink
+	rm -r "~/.emacs.d"
+	echo "removed symlink: ~/.emacs.d"
+    else
+	# directory
+	rmdir -r "~/.emacs.d"
+	echo "removed dir: ~/.emacs.d"
+    fi
+fi
 ln -sv ~/dotfiles/.emacs.d/* ~/.emacs.d/
