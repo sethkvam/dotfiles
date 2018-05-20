@@ -27,6 +27,7 @@ if [ -x /usr/vin/dircolors ]; then
 	alias egrep = 'egrep --color=auto'
 fi
 
+alias firefox-dev='~/.local/share/umake/web/firefox-dev/firefox'
 alias ll='ls -alF'
 alias la='ls -A'
 #alias ls='ls -ls'
