@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# UNIX INSTALL-------------------------
 ln -sv ~/dotfiles/.bashrc ~
 ln -sv ~/dotfiles/.tmux.conf ~
 
@@ -15,3 +16,11 @@ if [ -d "~/.emacs.d/" ]; then
     fi
 fi
 ln -sv ~/dotfiles/.emacs.d/* ~/.emacs.d/
+#--------------------------------------
+
+# MAC INSTALL (instructions, not scripted)
+
+# ln -sv /Users/kvams/Documents/GitHub/dotfiles/.tmux.conf /Users/kvams
+# ln -sv /Users/kvams/Documents/GitHub/dotfiles/.bashrc /Users/kvams
+# mkdir /Users/kvams/.emacs.d
+# ln -sv /Users/kvams/Documents/GitHub/dotfiles/.emacs.d/* /Users/kvams/.emacs.d
