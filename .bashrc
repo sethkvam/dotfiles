@@ -9,7 +9,10 @@ export PATH=~/bin:$PATH
 export PS1="\[\033[0;32m\]\u@\h:\e[0;93m\w \e[0;93m$ \e[m" 
 # \e[m
 
-alias piggydev='tmux new-session \; split-window -h \; split-window -v \; resize-pane -x 132 -y 43 \; send-keys "cd ~/367sp17/piggy/" C-m'
+alias piggydev='tmux new-session \; split-window -h \; split-window -v \; resize-
+pane -x 132 -y 43 \; send-keys "cd ~/367sp17/piggy/" C-m'
+
+alias tmux-vert3="tmux new-session \; split-window -v \;"
 
 # check window size after each command; if necessary,
 # update the values of LINES and COLUMNS
