@@ -3,6 +3,12 @@
  # . ~/.bashrc
 ###################################################################
 
+alias cdwin='cd ../../mnt/c/Users/skvam/Dev'
+alias cdweb='cd ../../mnt/c/xampp/htdocs/preview.pointb'
+
+export DOCKER_HOST=tcp://127.0.0.1:2375
+#export DISPLAY=:0
+
 export PATH=~/bin:$PATH
 
 # export PS1="\[\e[33m\]\u\[\e[m\]\[\e[37;40m\]@\[\e[m\]\[\e[36m\]\w\[\e[m\] "
